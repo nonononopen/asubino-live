@@ -19,4 +19,4 @@ npm run dev
 
 ブラウザで http://127.0.0.1:43141 を開きます。
 
-画像は Figma から書き出した写真を WebP で最適化して `public/images/` に置いています。
+画像は Figma から PC 版（横長）と SP 版（縦長）を別々に書き出し、`public/images/pc/` と `public/images/sp/` に置いています。768px 以上では PC 版、それ未満では SP 版を `<picture>` で切り替えます。
