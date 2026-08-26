@@ -32,9 +32,9 @@
         <a href="#news">お知らせ</a>
         <a href="#concert">コンサート情報</a>
         <a href="#features">ホールの特徴</a>
-        <a href="/availability.html">空き状況</a>
+        <a href="#availability">空き状況</a>
         <a href="#access">アクセス</a>
-        <a href="/contact.html">お問い合わせ</a>
+        <a href="#contact">お問い合わせ</a>
       </nav>
       <button class="menu-toggle" aria-label="メニューを開く" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -56,9 +56,9 @@
         <a href="#news">お知らせ</a>
         <a href="#concert">コンサート情報</a>
         <a href="#features">ホールの特徴</a>
-        <a href="/availability.html">ホールの空き状況</a>
+        <a href="#availability">ホールの空き状況</a>
         <a href="#access">アクセス</a>
-        <a href="/contact.html">お問い合わせ</a>
+        <a href="#contact">お問い合わせ</a>
       </nav>
       <div class="nav-ctas">
         <a class="btn-ghost" href="#concert">チケット予約</a>
@@ -67,8 +67,10 @@
     </div>
 
     <section class="hero">
-      <div class="hero-media">
-        <img src="/images/hero.jpg" alt="ベーゼンドルファーとソプラノの演奏" />
+      <div class="hero-media" data-hero>
+        <img class="is-active" src="/images/hall-winter.webp" alt="雪山を背にしたホール外観" />
+        <img src="/images/empty-hall.webp" alt="スポットライトに照らされたベーゼンドルファー" />
+        <img src="/images/hero.webp" alt="ソプラノとピアノの演奏" />
       </div>
       <div class="hero-copy">
         <h1>
@@ -225,13 +227,17 @@
 
     <section class="gallery" id="gallery">
       <h2 class="en-title reveal">GALLERY</h2>
-      <div class="gallery-track">
-        <img src="/images/pianist-man.webp" alt="ベーゼンドルファーを弾くピアニスト" />
-        <img src="/images/empty-hall.webp" alt="スポットライトに照らされた舞台" />
-        <img src="/images/piano-keys.webp" alt="ベーゼンドルファーの鍵盤" />
-        <img src="/images/interior.webp" alt="客席から見た舞台" />
-        <img src="/images/hero.jpg" alt="ソプラノとピアノ" />
-        <img src="/images/trio.webp" alt="ピアノ三重奏" />
+      <div class="gallery-wrap">
+        <button class="arrow prev gallery-prev" type="button" aria-label="前へ">←</button>
+        <div class="gallery-track">
+          <img src="/images/pianist-man.webp" alt="ベーゼンドルファーを弾くピアニスト" />
+          <img src="/images/empty-hall.webp" alt="スポットライトに照らされた舞台" />
+          <img src="/images/piano-keys.webp" alt="ベーゼンドルファーの鍵盤" />
+          <img src="/images/interior.webp" alt="客席から見た舞台" />
+          <img src="/images/hero.webp" alt="ソプラノとピアノ" />
+          <img src="/images/trio.webp" alt="ピアノ三重奏" />
+        </div>
+        <button class="arrow next gallery-next" type="button" aria-label="次へ">→</button>
       </div>
     </section>
 
@@ -290,68 +296,138 @@
       </div>
 
       <figure class="reveal" style="max-width: 720px; margin: 36px auto 0">
-        <img src="/images/singers.jpg" alt="ヴァイオリンとソプラノの舞台" style="width:100%;height:320px;object-fit:cover" />
+        <img src="/images/pianist-red.webp" alt="演奏者と客席の距離" style="width:100%;height:320px;object-fit:cover" />
       </figure>
+
+      <div class="features-copy resonance reveal">
+        <h3>INTIMACY</h3>
+        <p class="lead">演奏者とのふれあい</p>
+        <p>
+          演奏後はステージ上での記念撮影や、演奏家を交えた和やかな打ち上げ会を開催。舞台の上の姿だけでなく、気さくな人柄や音楽への想いに直接ふれることができる時間です。「これからも応援したい」と思える大好きな音楽家と出会う、特別な体験が待っています。
+        </p>
+      </div>
+
+      <figure class="reveal" style="max-width: 720px; margin: 36px auto 0">
+        <img src="/images/landscape.webp" alt="田園と北アルプス、ホールの外観" style="width:100%;height:320px;object-fit:cover" />
+      </figure>
+
+      <div class="features-copy resonance reveal">
+        <h3>AZUMINO</h3>
+        <p class="lead">安曇野の原風景</p>
+        <p>
+          ホールを出れば、北アルプスの稜線と水を張った田園が広がります。四季の光と風が疲れた心をほどき、コンサートの余韻を景色がそっと引き受けてくれます。音楽と安曇野の原風景を、ひとつながりの時間としてお楽しみください。
+        </p>
+      </div>
     </section>
 
-    <section class="salon" id="salon">
-      <img src="/images/cafe.jpg" alt="ホール併設の喫茶スペース" />
-      <img src="/images/coffee.png" alt="コーヒー" style="object-fit: contain; background:#111" />
+    <section class="section" id="availability">
+      <div class="section-head reveal">
+        <h2 class="en-title">AVAILABILITY</h2>
+        <p class="ja-title">ホールの空き状況</p>
+      </div>
+      <div class="features-copy reveal" style="text-align:center">
+        <p>
+          コンサートやリサイタルはもちろん、レッスン、リハーサル、録音まで。プロ・アマを問わずご利用いただけます。下記カレンダーの×印以外が空き日です。仮予約のうえ、お電話でご確認ください。
+        </p>
+      </div>
+      <div class="calendar reveal" data-calendar>
+        <div class="cal-head">
+          <button class="cal-nav" type="button" data-prev></button>
+          <strong data-month></strong>
+          <button class="cal-nav" type="button" data-next></button>
+        </div>
+        <div class="cal-grid"></div>
+      </div>
+      <p class="cal-note">・✕の日以外はご利用可能ですが、念のためホール（0263-82-6419）までお問い合わせください。<br />・仮予約の日付はお電話でご確認ください。</p>
+      <div class="cta-row reveal">
+        <a class="btn-gold" href="#contact">¥ ホールの利用料金を見る</a>
+        <a class="btn-line" href="/availability.html">ホールの空き状況一覧を見る</a>
+      </div>
     </section>
-
-    <section class="nature">
-      <img src="/images/paddy.webp" alt="安曇野の水田に映る北アルプス" />
-      <img src="/images/river.webp" alt="清らかな安曇野の小川" />
-    </section>
-    <img src="/images/landscape.webp" alt="田園とホール" style="width:100%;height:42vh;object-fit:cover;display:block" />
 
     <section class="section access" id="access">
       <div class="section-head reveal">
         <h2 class="en-title">ACCESS</h2>
         <p class="ja-title">アクセス</p>
       </div>
-      <div class="access-grid">
-        <div class="map-wrap reveal">
-          <img src="/images/map.webp" alt="あづみ野コンサートホール周辺地図" />
-        </div>
-        <div class="access-info reveal">
-          <h3>あづみ野コンサートホール</h3>
-          <p>
-            〒399-8303<br />
-            長野県安曇野市穂高3987-8<br />
-            TEL. 0263-82-6419<br />
-            FAX. 0263-82-9419
-          </p>
-          <p>
-            JR大糸線「穂高」駅からタクシー約10分。<br />
-            長野自動車道 安曇野ICから車で約15分。<br />
-            大王わさび農場のほど近く、北アルプスを望む田園にあります。
-          </p>
-          <a class="btn-line" href="/access.html">詳しく見る →</a>
-        </div>
+      <p class="center reveal addr">〒399-8303 長野県安曇野市穂高3987-8</p>
+      <div class="map-wrap reveal" style="max-width:720px;margin:0 auto 24px">
+        <img src="/images/map.webp" alt="あづみ野コンサートホール周辺地図" />
+      </div>
+      <div class="transit reveal">
+        <p><span class="ico" aria-hidden="true">🚗</span>長野自動車道の安曇野インター（旧豊科インター）より7分。</p>
+        <p><span class="ico" aria-hidden="true">🚉</span>JR松本駅からJR大糸線の穂高駅下車。駅前のタクシーを利用すれば約5分ほど。</p>
       </div>
     </section>
 
+    <section class="cafe" id="cafe">
+      <div class="cafe-collage reveal">
+        <img src="/images/cafe.webp" alt="窓辺の喫茶スペース" />
+        <img src="/images/coffee.webp" alt="コーヒー" />
+      </div>
+      <h2 class="cafe-title reveal">Music &amp; Café</h2>
+      <p class="cafe-lead reveal">音楽の余韻を、コーヒーとともに。</p>
+      <p class="cafe-copy reveal">
+        ホールに併設した喫茶室からは、安曇野の四季が窓ごしに移ろいます。香り高いコーヒーと軽いお食事で、開演前や終演後のひとときをお過ごしください。
+      </p>
+      <p class="center reveal"><a class="btn-line" href="#contact">喫茶室のご案内 →</a></p>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-head reveal">
+        <h2 class="en-title">CONTACT</h2>
+        <p class="ja-title">ご予約・お問い合わせ</p>
+      </div>
+      <p class="features-copy reveal">
+        コンサートチケットのご予約、ホール利用に関するお問い合わせを受け付けています。お電話、または下記フォームよりご連絡ください。
+      </p>
+      <p class="phone-xl reveal">☎ 0263-82-6419</p>
+      <p class="center hours">受付時間：9:00〜21:00</p>
+      <form class="form reveal">
+        <label>お名前 <span class="req">必須</span>
+          <input name="name" required autocomplete="name" placeholder="text" />
+        </label>
+        <label>電話番号 <span class="req">必須</span>
+          <input type="tel" name="tel" required autocomplete="tel" placeholder="text" />
+        </label>
+        <label>e-mail
+          <input type="email" name="email" autocomplete="email" placeholder="text" />
+        </label>
+        <label>メッセージ <span class="req">必須</span>
+          <textarea name="message" required placeholder="ご予約内容（公演名・枚数）や、ホール利用希望日、お問い合わせ内容をご記入ください"></textarea>
+        </label>
+        <p><button class="btn-line" type="submit">✈ 送信</button></p>
+      </form>
+    </section>
+
     <footer class="footer">
-      <div class="footer-inner">
-        <div>
-          <a class="footer-brand" href="/">
-            <img src="/images/logo.svg" width="44" height="44" alt="" />
-            <span>
-              原風景の小さなピアノホール<br />
-              あづみ野コンサートホール
-            </span>
-          </a>
-          <small>copyright© azumino concert hall all rights reserved.</small>
-        </div>
+      <div class="footer-grid">
         <nav>
           <a href="#news">お知らせ</a>
+          <a href="#features">ホールの特徴</a>
+          <a href="#access">アクセス</a>
+        </nav>
+        <nav>
           <a href="#concert">コンサート情報</a>
-          <a href="#features">ホール案内</a>
-          <a href="/availability.html">ホール空き状況</a>
-          <a href="/contact.html">お問い合わせ</a>
+          <a href="#availability">ホールの空き状況</a>
+          <a href="#contact">お問い合わせ</a>
         </nav>
       </div>
+      <a class="footer-brand" href="/">
+        <img src="/images/logo.svg" width="44" height="44" alt="" />
+        <span>
+          原風景の小さなピアノホール<br />
+          <strong>あづみ野コンサートホール</strong>
+        </span>
+      </a>
+      <p class="footer-contact">
+        <span>☎ 0263-82-6419</span>
+        <span>|</span>
+        <a href="https://www.instagram.com/" aria-label="Instagram">
+          <img src="/images/instagram.webp" alt="" />
+        </a>
+      </p>
+      <small>©2026 Azumino Concert Hall</small>
     </footer>
 
     <div class="toast" role="status"></div>
