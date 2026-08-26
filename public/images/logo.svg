@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <ellipse cx="50" cy="72" rx="38" ry="26" fill="#2E5F8A"/>
+  <rect x="82" y="18" width="10" height="56" rx="4" fill="#2E5F8A"/>
+  <path d="M92 18c18 2 26 16 20 32-8-10-16-14-20-14V18Z" fill="#2E5F8A"/>
+  <ellipse cx="42" cy="34" rx="16" ry="11" fill="#F2C94C"/>
+  <ellipse cx="52" cy="30" rx="7" ry="6" fill="#F2C94C"/>
+  <circle cx="56" cy="28" r="1.6" fill="#2E5F8A"/>
+  <path d="M42 44v8" stroke="#2E5F8A" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="50" y="78" text-anchor="middle" fill="#fff" font-family="Montserrat, 'Noto Sans JP', sans-serif" font-size="20" font-weight="800" letter-spacing="1">ACH</text>
+</svg>
