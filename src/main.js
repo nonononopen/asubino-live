@@ -56,7 +56,7 @@ bindSlider(".gallery-track", ".gallery-prev", ".gallery-next");
 
 const hero = document.querySelector("[data-hero]");
 if (hero) {
-  const slides = [...hero.querySelectorAll("img")];
+  const slides = [...hero.querySelectorAll("picture, :scope > img")];
   let i = 0;
   setInterval(() => {
     slides[i].classList.remove("is-active");

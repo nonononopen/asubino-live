@@ -68,9 +68,18 @@
 
     <section class="hero">
       <div class="hero-media" data-hero>
-        <img class="is-active" src="/images/hall-winter.webp" alt="雪山を背にしたホール外観" />
-        <img src="/images/empty-hall.webp" alt="スポットライトに照らされたベーゼンドルファー" />
-        <img src="/images/hero.webp" alt="ソプラノとピアノの演奏" />
+        <picture class="is-active">
+          <source media="(min-width: 768px)" srcset="/images/pc/hero-1.webp" type="image/webp" />
+          <img src="/images/sp/hero-1.webp" alt="雪山を背にしたホール外観" />
+        </picture>
+        <picture>
+          <source media="(min-width: 768px)" srcset="/images/pc/hero-2.webp" type="image/webp" />
+          <img src="/images/sp/hero-2.webp" alt="スポットライトに照らされたベーゼンドルファー" />
+        </picture>
+        <picture>
+          <source media="(min-width: 768px)" srcset="/images/pc/hero-3.webp" type="image/webp" />
+          <img src="/images/sp/hero-3.webp" alt="ソプラノとピアノの演奏" />
+        </picture>
       </div>
       <div class="hero-copy">
         <h1>
@@ -99,7 +108,10 @@
         </p>
       </div>
       <div class="hall-fade reveal">
-        <img src="/images/hall-winter.webp" alt="雪山を背にしたあづみ野コンサートホール" />
+        <picture>
+          <source media="(min-width: 768px)" srcset="/images/pc/about-hall.webp" type="image/webp" />
+          <img src="/images/sp/about-hall.webp" alt="雪山を背にしたあづみ野コンサートホール" />
+        </picture>
       </div>
       <div class="quote-on-photo reveal">
         <p>大自然の静けさと、ホールいっぱいに満ちる温かい音。</p>
@@ -108,7 +120,10 @@
     </section>
 
     <section class="bleed-photo">
-      <img src="/images/live-quartet.webp" alt="ホールでのライブ演奏" />
+      <picture>
+        <source media="(min-width: 768px)" srcset="/images/pc/bleed.webp" type="image/webp" />
+        <img src="/images/sp/bleed.webp" alt="ホールでのライブ演奏" />
+      </picture>
     </section>
 
     <section class="section news" id="news">
@@ -147,10 +162,10 @@
       <p class="pickup reveal">PICK UP!</p>
 
       <div class="poster-wrap reveal">
-        <article class="poster-card" style="background-image: linear-gradient(180deg, rgba(20,12,8,.15), rgba(20,12,8,.78)), url('/images/trio.webp')">
-          <small>2026.7.19 SUN 14:00</small>
-          <h4>荒 絵里子と素晴らしい仲間たち</h4>
-        </article>
+        <picture>
+          <source media="(min-width: 768px)" srcset="/images/pc/poster-ara.webp" type="image/webp" />
+          <img src="/images/sp/poster-ara.webp" alt="荒 絵里子と素晴らしい仲間たち 公演チラシ" />
+        </picture>
       </div>
 
       <div class="concert-detail reveal">
@@ -177,7 +192,10 @@
       <div class="slider concert-slider">
         <article class="slide-card">
           <div class="thumb">
-            <img src="/images/pianist-red.webp" alt="伊藤美歩ソプラノ・リサイタル" />
+            <picture>
+              <source media="(min-width: 768px)" srcset="/images/pc/poster-ito.webp" type="image/webp" />
+              <img src="/images/sp/poster-ito.webp" alt="伊藤美歩ソプラノ・リサイタル" />
+            </picture>
             <button class="arrow prev concert-prev" type="button" aria-label="前へ">←</button>
             <button class="arrow next concert-next" type="button" aria-label="次へ">→</button>
           </div>
@@ -193,7 +211,10 @@
         </article>
         <article class="slide-card">
           <div class="thumb">
-            <img src="/images/pianist-man.webp" alt="ショパンの午後" />
+            <picture>
+              <source media="(min-width: 768px)" srcset="/images/pc/poster-chopin.webp" type="image/webp" />
+              <img src="/images/sp/poster-chopin.webp" alt="ショパンの午後" />
+            </picture>
           </div>
           <div class="meta">
             <p>2026.8.9(日) 14:00</p>
@@ -207,7 +228,10 @@
         </article>
         <article class="slide-card">
           <div class="thumb">
-            <img src="/images/empty-hall.webp" alt="小原孝ピアノ・リサイタル" />
+            <picture>
+              <source media="(min-width: 768px)" srcset="/images/pc/poster-ohara.webp" type="image/webp" />
+              <img src="/images/sp/poster-ohara.webp" alt="小原孝ピアノ・リサイタル" />
+            </picture>
           </div>
           <div class="meta">
             <p>2026.9.13(日) 14:00</p>
@@ -230,12 +254,30 @@
       <div class="gallery-wrap">
         <button class="arrow prev gallery-prev" type="button" aria-label="前へ">←</button>
         <div class="gallery-track">
-          <img src="/images/pianist-man.webp" alt="ベーゼンドルファーを弾くピアニスト" />
-          <img src="/images/empty-hall.webp" alt="スポットライトに照らされた舞台" />
-          <img src="/images/piano-keys.webp" alt="ベーゼンドルファーの鍵盤" />
-          <img src="/images/interior.webp" alt="客席から見た舞台" />
-          <img src="/images/hero.webp" alt="ソプラノとピアノ" />
-          <img src="/images/trio.webp" alt="ピアノ三重奏" />
+          <picture>
+            <source media="(min-width: 768px)" srcset="/images/pc/gallery-1.webp" type="image/webp" />
+            <img src="/images/sp/gallery-1.webp" alt="ベーゼンドルファーを弾くピアニスト" />
+          </picture>
+          <picture>
+            <source media="(min-width: 768px)" srcset="/images/pc/gallery-2.webp" type="image/webp" />
+            <img src="/images/sp/gallery-2.webp" alt="スポットライトに照らされた舞台" />
+          </picture>
+          <picture>
+            <source media="(min-width: 768px)" srcset="/images/pc/gallery-3.webp" type="image/webp" />
+            <img src="/images/sp/gallery-3.webp" alt="ベーゼンドルファーの鍵盤" />
+          </picture>
+          <picture>
+            <source media="(min-width: 768px)" srcset="/images/pc/gallery-4.webp" type="image/webp" />
+            <img src="/images/sp/gallery-4.webp" alt="客席から見た舞台" />
+          </picture>
+          <picture>
+            <source media="(min-width: 768px)" srcset="/images/pc/gallery-5.webp" type="image/webp" />
+            <img src="/images/sp/gallery-5.webp" alt="ソプラノとピアノ" />
+          </picture>
+          <picture>
+            <source media="(min-width: 768px)" srcset="/images/pc/gallery-6.webp" type="image/webp" />
+            <img src="/images/sp/gallery-6.webp" alt="ピアノ三重奏" />
+          </picture>
         </div>
         <button class="arrow next gallery-next" type="button" aria-label="次へ">→</button>
       </div>
@@ -244,7 +286,7 @@
     <section class="ig">
       <p>演奏会の様子やホールの日常をInstagramでご紹介しています。</p>
       <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-        <img src="/images/instagram.webp" alt="Instagram" />
+        <img src="/images/instagram.svg" alt="Instagram" />
         <span>Follow us</span>
       </a>
     </section>
@@ -255,7 +297,10 @@
         <p class="ja-title">ホールの特徴</p>
       </div>
       <div class="piano-hero reveal">
-        <img src="/images/bosendorfer.webp" alt="Bösendorfer グランドピアノ" />
+        <picture>
+          <source media="(min-width: 768px)" srcset="/images/pc/piano.webp" type="image/webp" />
+          <img src="/images/sp/piano.webp" alt="Bösendorfer グランドピアノ" />
+        </picture>
       </div>
       <h3 class="brand-name reveal">Bösendorfer</h3>
       <p class="gold-line reveal">音楽の都ウィーンの至宝「ベーゼンドルファー」</p>
@@ -267,11 +312,14 @@
       </div>
 
       <div class="overlap reveal">
-        <img class="keys" src="/images/piano-keys.webp" alt="Bösendorfer の鍵盤と紋章" />
-        <div class="framed">
-          <img class="portrait" src="/images/liszt.webp" alt="フランツ・リスト" />
-          <img class="frame" src="/images/frame.webp" alt="" />
-        </div>
+        <picture class="keys">
+          <source media="(min-width: 768px)" srcset="/images/pc/keys.webp" type="image/webp" />
+          <img src="/images/sp/keys.webp" alt="Bösendorfer の鍵盤と紋章" />
+        </picture>
+        <picture class="framed">
+          <source media="(min-width: 768px)" srcset="/images/pc/liszt-frame.webp" type="image/webp" />
+          <img src="/images/sp/liszt-frame.webp" alt="金の楕円額に収められたフランツ・リスト" />
+        </picture>
       </div>
 
       <div class="features-copy reveal">
@@ -284,7 +332,10 @@
       </div>
 
       <figure class="arch reveal">
-        <img src="/images/interior.webp" alt="木のホールに響く室内楽" />
+        <picture>
+          <source media="(min-width: 768px)" srcset="/images/pc/resonance.webp" type="image/webp" />
+          <img src="/images/sp/resonance.webp" alt="木のホールに響く室内楽" />
+        </picture>
       </figure>
 
       <div class="features-copy resonance reveal">
@@ -295,8 +346,11 @@
         </p>
       </div>
 
-      <figure class="reveal" style="max-width: 720px; margin: 36px auto 0">
-        <img src="/images/pianist-red.webp" alt="演奏者と客席の距離" style="width:100%;height:320px;object-fit:cover" />
+      <figure class="feat-photo reveal">
+        <picture>
+          <source media="(min-width: 768px)" srcset="/images/pc/intimacy.webp" type="image/webp" />
+          <img src="/images/sp/intimacy.webp" alt="演奏者と客席の距離" />
+        </picture>
       </figure>
 
       <div class="features-copy resonance reveal">
@@ -307,8 +361,11 @@
         </p>
       </div>
 
-      <figure class="reveal" style="max-width: 720px; margin: 36px auto 0">
-        <img src="/images/landscape.webp" alt="田園と北アルプス、ホールの外観" style="width:100%;height:320px;object-fit:cover" />
+      <figure class="feat-photo reveal">
+        <picture>
+          <source media="(min-width: 768px)" srcset="/images/pc/azumino.webp" type="image/webp" />
+          <img src="/images/sp/azumino.webp" alt="田園と北アルプス、ホールの外観" />
+        </picture>
       </figure>
 
       <div class="features-copy resonance reveal">
@@ -352,7 +409,10 @@
       </div>
       <p class="center reveal addr">〒399-8303 長野県安曇野市穂高3987-8</p>
       <div class="map-wrap reveal" style="max-width:720px;margin:0 auto 24px">
-        <img src="/images/map.webp" alt="あづみ野コンサートホール周辺地図" />
+        <picture>
+          <source media="(min-width: 768px)" srcset="/images/pc/map.webp" type="image/webp" />
+          <img src="/images/sp/map.webp" alt="あづみ野コンサートホール周辺地図" />
+        </picture>
       </div>
       <div class="transit reveal">
         <p><span class="ico" aria-hidden="true">🚗</span>長野自動車道の安曇野インター（旧豊科インター）より7分。</p>
@@ -362,8 +422,14 @@
 
     <section class="cafe" id="cafe">
       <div class="cafe-collage reveal">
-        <img src="/images/cafe.webp" alt="窓辺の喫茶スペース" />
-        <img src="/images/coffee.webp" alt="コーヒー" />
+        <picture>
+          <source media="(min-width: 768px)" srcset="/images/pc/cafe.webp" type="image/webp" />
+          <img src="/images/sp/cafe.webp" alt="窓辺の喫茶スペース" />
+        </picture>
+        <picture>
+          <source media="(min-width: 768px)" srcset="/images/pc/coffee.webp" type="image/webp" />
+          <img src="/images/sp/coffee.webp" alt="コーヒー" />
+        </picture>
       </div>
       <h2 class="cafe-title reveal">Music &amp; Café</h2>
       <p class="cafe-lead reveal">音楽の余韻を、コーヒーとともに。</p>
@@ -424,7 +490,7 @@
         <span>☎ 0263-82-6419</span>
         <span>|</span>
         <a href="https://www.instagram.com/" aria-label="Instagram">
-          <img src="/images/instagram.webp" alt="" />
+          <img src="/images/instagram.svg" alt="" />
         </a>
       </p>
       <small>©2026 Azumino Concert Hall</small>

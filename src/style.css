@@ -312,26 +312,45 @@ button {
   inset: 0;
 }
 
+.hero-media picture,
 .hero-media img {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: 55% 40%;
   opacity: 0;
   transition: opacity 1.4s var(--ease);
 }
 
+.hero-media img {
+  object-fit: cover;
+  object-position: 52% 40%;
+}
+
+.hero-media picture.is-active,
 .hero-media img.is-active {
   opacity: 1;
+}
+
+.hero-media picture.is-active img {
   animation: kenburns 18s var(--ease) both;
+}
+
+@media (max-width: 767px) {
+  .hero-media img {
+    object-position: 50% 42%;
+  }
+}
+
+.hero-media picture {
+  z-index: 0;
 }
 
 .hero-media::after {
   content: "";
   position: absolute;
   inset: 0;
+  z-index: 1;
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0.28) 0%,
@@ -342,7 +361,7 @@ button {
 
 .hero-copy {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   padding: 0 28px 72px;
 }
 
@@ -468,12 +487,23 @@ button {
   position: relative;
 }
 
+.hall-fade picture,
+.hall-fade img {
+  display: block;
+  width: 100%;
+}
+
 .hall-fade img {
   width: 100%;
-  max-height: 520px;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
-  filter: grayscale(1) contrast(1.05);
-  mask-image: linear-gradient(to bottom, transparent 0%, #000 18%, #000 88%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, #000 12%, #000 88%, transparent 100%);
+}
+
+@media (max-width: 767px) {
+  .hall-fade img {
+    aspect-ratio: 3 / 4;
+  }
 }
 
 .quote-on-photo {
@@ -488,13 +518,24 @@ button {
 
 .bleed-photo {
   position: relative;
-  min-height: 70vh;
+}
+
+.bleed-photo picture,
+.bleed-photo img {
+  display: block;
+  width: 100%;
 }
 
 .bleed-photo img {
   width: 100%;
-  height: 70vh;
+  aspect-ratio: 16 / 8;
   object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .bleed-photo img {
+    aspect-ratio: 3 / 4;
+  }
 }
 
 /* News */
@@ -560,22 +601,33 @@ button {
   z-index: 0;
 }
 
+.poster-wrap picture,
 .poster-wrap img,
 .poster-card {
   position: relative;
   z-index: 1;
   width: 100%;
+  display: block;
+}
+
+.poster-wrap img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 7;
+  object-fit: cover;
+  object-position: top;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
 }
 
 .poster-card {
-  aspect-ratio: 3 / 4.2;
+  aspect-ratio: 5 / 7;
   background: #2a221c center/cover no-repeat;
   color: #fff;
   padding: 22px 18px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
 }
 
 .poster-card small {
@@ -669,14 +721,22 @@ button {
 
 .slide-card .thumb {
   position: relative;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 5 / 7;
   overflow: hidden;
+  background: #1a1410;
+}
+
+.slide-card .thumb picture {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .slide-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top center;
   transition: transform 0.6s var(--ease);
 }
 
@@ -749,13 +809,29 @@ button {
   display: none;
 }
 
-.gallery-track img {
-  height: min(52vh, 420px);
-  width: auto;
-  max-width: 86vw;
-  object-fit: cover;
+.gallery-track picture {
+  flex: 0 0 auto;
   scroll-snap-align: center;
-  filter: grayscale(0.15);
+  height: min(48vh, 400px);
+}
+
+.gallery-track img {
+  height: 100%;
+  width: auto;
+  max-width: 82vw;
+  aspect-ratio: 11 / 7;
+  object-fit: cover;
+  filter: grayscale(0.12);
+}
+
+@media (max-width: 767px) {
+  .gallery-track picture {
+    height: min(58vh, 460px);
+  }
+  .gallery-track img {
+    aspect-ratio: 3 / 4;
+    max-width: 88vw;
+  }
 }
 
 .ig {
@@ -772,8 +848,8 @@ button {
 }
 
 .ig img {
-  width: 52px;
-  height: 52px;
+  width: 48px;
+  height: 48px;
   margin: 0 auto 10px;
 }
 
@@ -787,15 +863,20 @@ button {
 }
 
 .piano-hero {
-  max-width: 560px;
+  max-width: 640px;
   margin: 0 auto 28px;
-  background: #111;
-  border-radius: 12px;
-  padding: 20px 28px;
+}
+
+.piano-hero picture,
+.piano-hero img {
+  display: block;
+  width: 100%;
 }
 
 .piano-hero img {
   width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .brand-name {
@@ -821,33 +902,35 @@ button {
 
 .overlap {
   position: relative;
-  max-width: 680px;
+  max-width: 720px;
   margin: 40px auto;
-  min-height: 280px;
+  min-height: 220px;
 }
 
 .overlap .keys {
-  width: 68%;
+  width: 62%;
+  display: block;
+}
+
+.overlap .keys img {
+  width: 100%;
+  display: block;
   filter: grayscale(1);
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
 }
 
 .framed {
   position: absolute;
   right: 0;
-  top: 8%;
-  width: 46%;
+  top: 4%;
+  width: 42%;
 }
 
-.framed .frame,
-.framed .portrait {
+.framed img {
   width: 100%;
-}
-
-.framed .portrait {
-  position: absolute;
-  inset: 12% 14%;
-  object-fit: cover;
-  border-radius: 50%;
+  height: auto;
+  display: block;
 }
 
 .arch {
@@ -857,10 +940,40 @@ button {
   border-radius: 999px 999px 0 0;
 }
 
+.arch picture,
+.arch img {
+  display: block;
+  width: 100%;
+}
+
 .arch img {
   width: 100%;
-  height: 360px;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
+}
+
+.feat-photo {
+  max-width: 720px;
+  margin: 36px auto 0;
+}
+
+.feat-photo picture,
+.feat-photo img {
+  display: block;
+  width: 100%;
+}
+
+.feat-photo img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .arch img,
+  .feat-photo img {
+    aspect-ratio: 3 / 4;
+  }
 }
 
 .resonance h3 {
@@ -898,9 +1011,24 @@ button {
   background: var(--cream);
 }
 
+.map-wrap picture,
+.map-wrap img {
+  display: block;
+  width: 100%;
+}
+
 .map-wrap img {
   width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: center;
   border: 1px solid #e8d5c8;
+}
+
+@media (max-width: 767px) {
+  .map-wrap img {
+    aspect-ratio: 1 / 1;
+  }
 }
 
 .access-info {
@@ -959,7 +1087,6 @@ button {
 .footer-contact img {
   width: 22px;
   height: 22px;
-  filter: grayscale(1) brightness(3);
 }
 
 .footer small {
@@ -1176,21 +1303,34 @@ button {
 .cafe-collage {
   position: relative;
   max-width: 420px;
-  height: 280px;
+  min-height: 280px;
   margin: 0 auto 36px;
 }
 
-.cafe-collage img:first-child {
+.cafe-collage picture:first-child,
+.cafe-collage > img:first-child {
   width: 74%;
+  display: block;
+}
+
+.cafe-collage picture:first-child img,
+.cafe-collage > img:first-child {
+  width: 100%;
   height: 250px;
   object-fit: cover;
 }
 
-.cafe-collage img:last-child {
+.cafe-collage picture:last-child,
+.cafe-collage > img:last-child {
   position: absolute;
   right: 0;
   bottom: 8px;
   width: 46%;
+}
+
+.cafe-collage picture:last-child img,
+.cafe-collage > img:last-child {
+  width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 50%;
@@ -1296,12 +1436,13 @@ button {
     max-width: 1100px;
     margin: 0 auto;
   }
-  .poster-wrap { max-width: 380px; }
+  .poster-wrap { max-width: 400px; }
   .cafe-collage {
     max-width: 560px;
-    height: 360px;
+    min-height: 360px;
   }
-  .cafe-collage img:first-child {
+  .cafe-collage picture:first-child img,
+  .cafe-collage > img:first-child {
     height: 320px;
   }
   .cta-row {
