@@ -344,8 +344,68 @@ button {
 }
 
 @media (max-width: 767px) {
+  :root {
+    --header-h: 56px;
+  }
+
+  .site-header {
+    padding: 0 16px;
+  }
+
+  .brand-mark {
+    width: 40px;
+    height: 40px;
+  }
+
+  .brand-text small {
+    font-size: 9px;
+  }
+
+  .brand-text strong {
+    font-size: 13px;
+  }
+
+  .hero {
+    min-height: 0;
+    height: min(68svh, 580px);
+  }
+
   .hero-media img {
-    object-position: 50% 42%;
+    object-position: 50% 32%;
+  }
+
+  .hero-media picture.is-active img {
+    animation: kenburns-sp 18s var(--ease) both;
+  }
+
+  .hero-copy {
+    padding: 0 20px 36px;
+  }
+
+  .hero-copy::before {
+    left: -20px;
+    right: -20px;
+    bottom: 8px;
+    height: 58%;
+  }
+
+  .hero-copy h1 {
+    font-size: 26px;
+    line-height: 1.48;
+    letter-spacing: 0.1em;
+  }
+
+  .feel {
+    margin-top: 6px;
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.82);
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.5);
+  }
+
+  .scroll-hint {
+    bottom: 10px;
+    width: 14px;
+    height: 22px;
   }
 }
 
@@ -1409,6 +1469,11 @@ button {
 
 @keyframes kenburns {
   from { transform: scale(1.08); }
+  to { transform: scale(1); }
+}
+
+@keyframes kenburns-sp {
+  from { transform: scale(1.04); }
   to { transform: scale(1); }
 }
 
