@@ -403,11 +403,6 @@ button {
     text-shadow: 0 2px 18px rgba(0, 0, 0, 0.5);
   }
 
-  .about-inner {
-    text-align: left;
-    padding: 0 8px;
-  }
-
   .en-title {
     font-family: var(--sans);
     font-weight: 700;
@@ -615,7 +610,6 @@ button {
   }
 
   .about-inner {
-    text-align: left;
     padding: 0;
   }
 
