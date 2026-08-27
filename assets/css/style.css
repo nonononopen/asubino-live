@@ -408,20 +408,6 @@ button {
     padding: 0 8px;
   }
 
-  .about-fade-band {
-    min-height: 280px;
-    padding: 88px 24px 48px;
-  }
-
-  .hall-fade img {
-    object-position: center 38%;
-  }
-
-  .quote-on-photo {
-    padding: 0 8px;
-    text-align: left;
-  }
-
   .en-title {
     font-family: var(--sans);
     font-weight: 700;
@@ -652,6 +638,7 @@ button {
   max-width: 720px;
   width: 100%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .quote-on-photo p {
@@ -660,6 +647,27 @@ button {
 
 .quote-on-photo p:last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .about-inner {
+    text-align: left;
+    padding: 0 8px;
+  }
+
+  .about-fade-band {
+    min-height: 280px;
+    padding: 88px 24px 48px;
+  }
+
+  .hall-fade img {
+    object-position: center 38%;
+  }
+
+  .quote-on-photo {
+    padding: 0 8px;
+    text-align: left;
+  }
 }
 
 .bleed-photo {
