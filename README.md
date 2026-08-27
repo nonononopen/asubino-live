@@ -9,7 +9,7 @@ Figmaが1枚の長いページなので、HTMLも `index.html` にまとめて�
 ├── assets
 │   ├── css       style.css
 │   ├── js        main.js
-│   └── images    写真・ロゴ（pc / sp）
+│   └── images    写真・ロゴ（pc / sp。ファイル名は内容が分かる名前）
 └── index.html
 ```
 
