@@ -3,7 +3,7 @@
   --blue-deep: #2e5f8a;
   --gold: #b89768;
   --gold-dark: #9a7a4e;
-  --cream: #fdf9f3;
+  --cream: #ffffff;
   --paper: #f7f4ee;
   --ink: #1a1a1a;
   --muted: #5a5a5a;
@@ -82,7 +82,7 @@ button {
 }
 
 .site-header.is-light {
-  background: rgba(253, 249, 243, 0.94);
+  background: rgba(255, 255, 255, 0.94);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
@@ -621,8 +621,8 @@ button {
   background: linear-gradient(
     180deg,
     var(--cream) 0%,
-    rgba(253, 249, 243, 0.55) 28%,
-    rgba(253, 249, 243, 0.28) 100%
+    rgba(255, 255, 255, 0.55) 28%,
+    rgba(255, 255, 255, 0.28) 100%
   );
 }
 
