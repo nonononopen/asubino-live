@@ -2,14 +2,20 @@
 
 長野県安曇野市穂高の小さなピアノホール「あづみ野コンサートホール」のウェブサイトです。Figma提出用デザイン（遠藤ちなり）をもとに、HTML / CSS / JS で再現しています。
 
-サイトの中身は次の **4フォルダ** に分けています。
-
-| フォルダ | 中身 |
-| --- | --- |
-| `html/` | 全ページ（`index.html` ほか） |
-| `css/` | スタイル（`style.css`） |
-| `js/` | 動き（`main.js`） |
-| `images/` | 画像（PC用 `pc/`、スマホ用 `sp/`） |
+```
+あづみ野コンサートホール
+├── assets
+│   ├── css      style.css
+│   ├── js       main.js
+│   └── images   写真・ロゴ（pc / sp）
+├── index.html
+├── news.html
+├── concerts.html
+├── concert.html
+├── availability.html
+├── access.html
+└── contact.html
+```
 
 ## できること
 
@@ -26,6 +32,4 @@ npm install
 npm run dev
 ```
 
-ブラウザで http://127.0.0.1:43141 を開きます（トップは `html/index.html`）。
-
-HTML から CSS / JS / 画像へは相対パス（`../css/`、`../js/`、`../images/`）でつないであります。画像は 768px 以上で PC 版、それ未満で SP 版を `<picture>` で切り替えます。
+ブラウザで http://127.0.0.1:43141 を開きます。
