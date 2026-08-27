@@ -12,7 +12,6 @@
   --black: #0c0c0c;
   --header-h: 72px;
   --serif: "Cormorant Garamond", "Noto Serif JP", "Yu Mincho", serif;
-  --script: "Great Vibes", "Segoe Script", cursive;
   --sans: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -398,10 +397,10 @@ button {
   }
 
   .feel {
-    margin-top: 8px;
-    font-size: 42px;
-    color: #fff;
-    text-shadow: 0 3px 16px rgba(0, 0, 0, 0.45);
+    margin-top: 6px;
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.82);
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.5);
   }
 
   .about-inner {
@@ -480,15 +479,14 @@ button {
 .hero-copy h1 span:nth-child(3) { animation-delay: 0.36s; }
 
 .feel {
-  margin: 10px 0 0;
-  font-family: var(--script);
-  font-style: normal;
-  font-weight: 400;
-  font-size: clamp(40px, 5.6vw, 78px);
+  margin: 8px 0 0;
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(42px, 12vw, 88px);
   letter-spacing: 0.04em;
-  color: #fff;
-  line-height: 1.15;
-  text-shadow: 0 4px 22px rgba(0, 0, 0, 0.4);
+  color: rgba(255, 255, 255, 0.38);
+  line-height: 0.9;
   opacity: 0;
   animation: fadeUp 1.2s 0.5s var(--ease) forwards;
 }
