@@ -12,6 +12,7 @@
   --black: #0c0c0c;
   --header-h: 72px;
   --serif: "Cormorant Garamond", "Noto Serif JP", "Yu Mincho", serif;
+  --script: "Great Vibes", "Segoe Script", cursive;
   --sans: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -379,27 +380,39 @@ button {
   }
 
   .hero-copy {
-    padding: 0 20px 36px;
+    padding: 0 24px 44px;
   }
 
   .hero-copy::before {
-    left: -20px;
-    right: -20px;
-    bottom: 8px;
-    height: 58%;
+    left: -24px;
+    right: -24px;
+    bottom: 4px;
+    height: 52%;
   }
 
   .hero-copy h1 {
-    font-size: 26px;
-    line-height: 1.48;
-    letter-spacing: 0.1em;
+    font-size: 22px;
+    line-height: 1.9;
+    letter-spacing: 0.12em;
+    font-weight: 500;
   }
 
   .feel {
-    margin-top: 6px;
-    font-size: 32px;
-    color: rgba(255, 255, 255, 0.82);
-    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.5);
+    margin-top: 8px;
+    font-size: 42px;
+    color: #fff;
+    text-shadow: 0 3px 16px rgba(0, 0, 0, 0.45);
+  }
+
+  .about-inner {
+    text-align: left;
+    padding: 0 8px;
+  }
+
+  .en-title {
+    font-family: var(--sans);
+    font-weight: 700;
+    letter-spacing: 0.12em;
   }
 
   .scroll-hint {
@@ -425,32 +438,35 @@ button {
 .hero-copy {
   position: relative;
   z-index: 2;
-  padding: 0 28px 72px;
+  padding: 0 40px 88px;
+  text-align: left;
 }
 
 .hero-copy::before {
   content: "";
   position: absolute;
-  left: -28px;
-  right: -28px;
-  bottom: 24px;
-  height: 70%;
+  left: -40px;
+  right: -40px;
+  bottom: 16px;
+  height: 62%;
   background: repeating-linear-gradient(
     -32deg,
-    transparent 0 10px,
-    rgba(0, 0, 0, 0.22) 10px 20px
+    transparent 0 12px,
+    rgba(0, 0, 0, 0.12) 12px 24px
   );
-  mask-image: linear-gradient(to top, #000 35%, transparent 100%);
+  mask-image: linear-gradient(to top, #000 30%, transparent 100%);
   pointer-events: none;
   z-index: -1;
 }
 
 .hero-copy h1 {
   margin: 0;
-  font-size: clamp(28px, 8vw, 48px);
-  font-weight: 700;
-  line-height: 1.35;
-  letter-spacing: 0.08em;
+  font-family: var(--sans);
+  font-size: clamp(22px, 2.2vw, 34px);
+  font-weight: 500;
+  line-height: 1.85;
+  letter-spacing: 0.14em;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.35);
 }
 
 .hero-copy h1 span {
@@ -464,14 +480,15 @@ button {
 .hero-copy h1 span:nth-child(3) { animation-delay: 0.36s; }
 
 .feel {
-  margin: 8px 0 0;
-  font-family: var(--serif);
-  font-style: italic;
-  font-weight: 500;
-  font-size: clamp(42px, 12vw, 88px);
+  margin: 10px 0 0;
+  font-family: var(--script);
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(40px, 5.6vw, 78px);
   letter-spacing: 0.04em;
-  color: rgba(255, 255, 255, 0.38);
-  line-height: 0.9;
+  color: #fff;
+  line-height: 1.15;
+  text-shadow: 0 4px 22px rgba(0, 0, 0, 0.4);
   opacity: 0;
   animation: fadeUp 1.2s 0.5s var(--ease) forwards;
 }
@@ -512,10 +529,10 @@ button {
 
 .en-title {
   margin: 0;
-  font-family: var(--serif);
-  font-size: clamp(32px, 7vw, 48px);
-  font-weight: 600;
-  letter-spacing: 0.16em;
+  font-family: var(--sans);
+  font-size: clamp(28px, 5.5vw, 42px);
+  font-weight: 700;
+  letter-spacing: 0.18em;
 }
 
 .ja-title {
