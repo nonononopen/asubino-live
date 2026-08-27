@@ -17,11 +17,11 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body>
+  <body id="top">
     <a class="skip" href="#about">本文へスキップ</a>
 
     <header class="site-header">
-      <a class="brand" href="index.html">
+      <a class="brand" href="#top">
         <img class="brand-mark" src="assets/images/logo.svg" alt="ACH" />
         <span class="brand-text">
           <small>原風景の小さなピアノホール</small>
@@ -43,7 +43,7 @@
 
     <div class="nav-overlay" role="dialog" aria-label="メニュー">
       <div class="nav-overlay-head">
-        <a class="brand" href="index.html">
+        <a class="brand" href="#top">
           <img class="brand-mark" src="assets/images/logo.svg" alt="" />
           <span class="brand-text">
             <small>原風景の小さなピアノホール</small>
@@ -62,7 +62,7 @@
       </nav>
       <div class="nav-ctas">
         <a class="btn-ghost" href="#concert">チケット予約</a>
-        <a class="btn-ghost" href="contact.html">ホール予約</a>
+        <a class="btn-ghost" href="#contact">ホール予約</a>
       </div>
     </div>
 
@@ -148,10 +148,15 @@
           <div class="news-meta"><time>2026-05-02</time><span class="tag">お知らせ</span></div>
           <p>友の会会員の更新受付を開始しています。</p>
         </li>
+        <li>
+          <div class="news-meta"><time>2026-04-10</time><span class="tag">ホール</span></div>
+          <p>春季の調律・メンテナンスを完了しました。</p>
+        </li>
+        <li>
+          <div class="news-meta"><time>2026-03-01</time><span class="tag">お知らせ</span></div>
+          <p>わさび田と桜の季節、周辺観光とあわせてご来場ください。</p>
+        </li>
       </ul>
-      <p class="center reveal">
-        <a class="btn-line" href="news.html">お知らせ一覧を見る →</a>
-      </p>
     </section>
 
     <section class="section" id="concert" style="padding-top: 24px">
@@ -180,13 +185,12 @@
           <span class="note">学生・会員割引あり</span>
         </div>
         <p class="center">
-          <a class="btn-line" href="concert.html">この公演を詳しく見る →</a>
+          <a class="btn-line" href="#contact">この公演のチケットを予約する</a>
         </p>
       </div>
 
       <div class="upcoming-head reveal">
         <strong>𝄞 今後のコンサート</strong>
-        <a href="concerts.html">一覧を見る →</a>
       </div>
 
       <div class="slider concert-slider">
@@ -243,9 +247,59 @@
             </div>
           </div>
         </article>
+        <article class="slide-card">
+          <div class="thumb">
+            <picture>
+              <source media="(min-width: 768px)" srcset="assets/images/pc/poster-andemusik.webp" type="image/webp" />
+              <img src="assets/images/sp/poster-andemusik.webp" alt="An die Musik" />
+            </picture>
+          </div>
+          <div class="meta">
+            <p>2026.10.18(日) 14:00</p>
+            <h4>『高橋多佳子ピアノ・リサイタル』</h4>
+            <p>An die Musik</p>
+            <div class="ticket-row">
+              <span class="badge-ticket">TICKET</span>
+              <span class="price">一般 4,000円</span>
+            </div>
+          </div>
+        </article>
+        <article class="slide-card">
+          <div class="thumb">
+            <picture>
+              <source media="(min-width: 768px)" srcset="assets/images/pc/gallery-6.webp" type="image/webp" />
+              <img src="assets/images/sp/gallery-6.webp" alt="宮谷理香ピアノ・リサイタル" />
+            </picture>
+          </div>
+          <div class="meta">
+            <p>2026.11.7(土) 14:00</p>
+            <h4>『宮谷理香ピアノ・リサイタル』</h4>
+            <p>デビュー30周年記念</p>
+            <div class="ticket-row">
+              <span class="badge-ticket">TICKET</span>
+              <span class="price">一般 4,500円</span>
+            </div>
+          </div>
+        </article>
+        <article class="slide-card">
+          <div class="thumb">
+            <picture>
+              <source media="(min-width: 768px)" srcset="assets/images/pc/gallery-1.webp" type="image/webp" />
+              <img src="assets/images/sp/gallery-1.webp" alt="藤村俊介＆石井楓子デュオ" />
+            </picture>
+          </div>
+          <div class="meta">
+            <p>2026.11.22(土) 14:00</p>
+            <h4>藤村俊介＆石井楓子デュオ</h4>
+            <div class="ticket-row">
+              <span class="badge-ticket">TICKET</span>
+              <span class="price">一般 4,000円</span>
+            </div>
+          </div>
+        </article>
       </div>
       <p class="center reveal" style="margin-top: 8px">
-        <a class="btn-line" href="contact.html">チケットを予約する</a>
+        <a class="btn-line" href="#contact">チケットを予約する</a>
       </p>
     </section>
 
@@ -397,8 +451,7 @@
       </div>
       <p class="cal-note">・✕の日以外はご利用可能ですが、念のためホール（0263-82-6419）までお問い合わせください。<br />・仮予約の日付はお電話でご確認ください。</p>
       <div class="cta-row reveal">
-        <a class="btn-gold" href="#contact">¥ ホールの利用料金を見る</a>
-        <a class="btn-line" href="availability.html">ホールの空き状況一覧を見る</a>
+        <a class="btn-gold" href="#contact">ホールを予約する</a>
       </div>
     </section>
 
@@ -479,7 +532,7 @@
           <a href="#contact">お問い合わせ</a>
         </nav>
       </div>
-      <a class="footer-brand" href="index.html">
+      <a class="footer-brand" href="#top">
         <img src="assets/images/logo.svg" width="44" height="44" alt="" />
         <span>
           原風景の小さなピアノホール<br />

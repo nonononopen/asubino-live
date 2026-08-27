@@ -2,27 +2,22 @@
 
 長野県安曇野市穂高の小さなピアノホール「あづみ野コンサートホール」のウェブサイトです。Figma提出用デザイン（遠藤ちなり）をもとに、HTML / CSS / JS で再現しています。
 
+Figmaが1枚の長いページなので、HTMLも `index.html` にまとめています。メニューはページ内の各セクションへ移動します。
+
 ```
 あづみ野コンサートホール
 ├── assets
-│   ├── css      style.css
-│   ├── js       main.js
-│   └── images   写真・ロゴ（pc / sp）
-├── index.html
-├── news.html
-├── concerts.html
-├── concert.html
-├── availability.html
-├── access.html
-└── contact.html
+│   ├── css       style.css
+│   ├── js        main.js
+│   └── images    写真・ロゴ（pc / sp）
+└── index.html
 ```
 
 ## できること
 
 - トップページ（ヒーローカルーセル、ABOUT、NEWS、コンサート、ギャラリー、FEATURES、空き状況カレンダー、アクセス、Music & Café、お問い合わせ）
-- お知らせ一覧、コンサート一覧・詳細
 - ホール空き状況カレンダー（×印が利用不可）
-- お問い合わせ / チケット・ホール予約フォーム（送信はフロントのみ）
+- お問い合わせフォーム（送信はフロントのみ）
 - ハンバーガーメニュー、スクロールフェード、ヒーローの切り替えと Ken Burns、スライダー
 
 ## ローカルで動かす

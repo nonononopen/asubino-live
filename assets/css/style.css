@@ -26,6 +26,10 @@ html {
   scroll-behavior: smooth;
 }
 
+section[id] {
+  scroll-margin-top: var(--header-h);
+}
+
 body {
   margin: 0;
   color: var(--ink);
