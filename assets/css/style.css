@@ -722,6 +722,11 @@ button {
   scroll-snap-align: start;
 }
 
+.slide-card a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .slide-card .thumb {
   position: relative;
   aspect-ratio: 5 / 7;
@@ -1010,8 +1015,11 @@ button {
   object-fit: cover;
 }
 
-.access {
-  background: var(--cream);
+.access-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  gap: 28px;
 }
 
 .map-wrap picture,

@@ -173,16 +173,16 @@
         </picture>
       </div>
 
-      <div class="concert-detail reveal">
-        <p class="date">2026.7.19(日) 14:00</p>
-        <h3>『荒 絵里子と素晴らしい仲間たち』</h3>
+      <div class="concert-detail reveal" id="concert-detail">
+        <p class="date">2026.7.19(日) 開場 13:30 / 開演 14:00</p>
+        <h3>『荒 絵里子と素晴らしい仲間たち』 Recreation de musique</h3>
         <p>
-          オーボエの澄んだ響きと、ベーゼンドルファーが織りなす室内楽。安曇野の初夏に、聴きに行きたくなるひとときをお届けします。
+          オーボエ奏者・荒絵里子を中心に、ピアノとチェロが寄り添う室内楽の午後。100席の距離だからこそ届く、息づかいと木管の色合いをお楽しみください。
         </p>
         <div class="ticket-row">
           <span class="badge-ticket">TICKET</span>
           <span class="price">前売 4,000円 / 当日 4,500円</span>
-          <span class="note">学生・会員割引あり</span>
+          <span class="note">学生・会員割引あり　全席自由（定員100名）</span>
         </div>
         <p class="center">
           <a class="btn-line" href="#contact">この公演のチケットを予約する</a>
@@ -195,13 +195,28 @@
 
       <div class="slider concert-slider">
         <article class="slide-card">
+          <a href="#concert-detail">
+            <div class="thumb">
+              <picture>
+                <source media="(min-width: 768px)" srcset="assets/images/pc/poster-ara.webp" type="image/webp" />
+                <img src="assets/images/sp/poster-ara.webp" alt="荒 絵里子と素晴らしい仲間たち" />
+              </picture>
+              <button class="arrow prev concert-prev" type="button" aria-label="前へ">←</button>
+              <button class="arrow next concert-next" type="button" aria-label="次へ">→</button>
+            </div>
+            <div class="meta">
+              <p>2026.7.19(日) 14:00</p>
+              <h4>『荒 絵里子と素晴らしい仲間たち』</h4>
+              <div class="ticket-row"><span class="badge-ticket">TICKET</span><span class="price">前売 4,000円</span></div>
+            </div>
+          </a>
+        </article>
+        <article class="slide-card">
           <div class="thumb">
             <picture>
               <source media="(min-width: 768px)" srcset="assets/images/pc/poster-ito.webp" type="image/webp" />
               <img src="assets/images/sp/poster-ito.webp" alt="伊藤美歩ソプラノ・リサイタル" />
             </picture>
-            <button class="arrow prev concert-prev" type="button" aria-label="前へ">←</button>
-            <button class="arrow next concert-next" type="button" aria-label="次へ">→</button>
           </div>
           <div class="meta">
             <p>2026.8.8(土) 14:00</p>
@@ -440,6 +455,7 @@
         <p>
           コンサートやリサイタルはもちろん、レッスン、リハーサル、録音まで。プロ・アマを問わずご利用いただけます。下記カレンダーの×印以外が空き日です。仮予約のうえ、お電話でご確認ください。
         </p>
+        <p>✕の日以外はご利用可能です。最終確認はお電話またはフォームから。</p>
       </div>
       <div class="calendar reveal" data-calendar>
         <div class="cal-head">
@@ -460,16 +476,28 @@
         <h2 class="en-title">ACCESS</h2>
         <p class="ja-title">アクセス</p>
       </div>
-      <p class="center reveal addr">〒399-8303 長野県安曇野市穂高3987-8</p>
-      <div class="map-wrap reveal" style="max-width:720px;margin:0 auto 24px">
-        <picture>
-          <source media="(min-width: 768px)" srcset="assets/images/pc/map.webp" type="image/webp" />
-          <img src="assets/images/sp/map.webp" alt="あづみ野コンサートホール周辺地図" />
-        </picture>
-      </div>
-      <div class="transit reveal">
-        <p><span class="ico" aria-hidden="true">🚗</span>長野自動車道の安曇野インター（旧豊科インター）より7分。</p>
-        <p><span class="ico" aria-hidden="true">🚉</span>JR松本駅からJR大糸線の穂高駅下車。駅前のタクシーを利用すれば約5分ほど。</p>
+      <div class="access-grid reveal">
+        <div class="map-wrap">
+          <picture>
+            <source media="(min-width: 768px)" srcset="assets/images/pc/map.webp" type="image/webp" />
+            <img src="assets/images/sp/map.webp" alt="あづみ野コンサートホール周辺地図" />
+          </picture>
+        </div>
+        <div class="access-info">
+          <h3>あづみ野コンサートホール</h3>
+          <p>〒399-8303 長野県安曇野市穂高3987-8<br />TEL. 0263-82-6419　FAX. 0263-82-9419</p>
+          <p>
+            <strong>電車</strong><br />
+            JR松本駅からJR大糸線の穂高駅下車。駅前のタクシーを利用すれば約5分ほど。
+          </p>
+          <p>
+            <strong>お車</strong><br />
+            長野自動車道の安曇野インター（旧豊科インター）より7分。駐車場あり。
+          </p>
+          <p>
+            北にわさび田と湧水、西に常念岳をはじめとする北アルプス。四季の原風景のなかで、コンサートと安曇野観光をあわせてお楽しみいただけます。
+          </p>
+        </div>
       </div>
     </section>
 
@@ -501,21 +529,33 @@
         コンサートチケットのご予約、ホール利用に関するお問い合わせを受け付けています。お電話、または下記フォームよりご連絡ください。
       </p>
       <p class="phone-xl reveal">☎ 0263-82-6419</p>
-      <p class="center hours">受付時間：9:00〜21:00</p>
+      <p class="center hours">受付時間：9:00〜21:00（年中無休）<br />Mail. azuminoconcert@gmail.com</p>
       <form class="form reveal">
+        <label>お問い合わせ種別
+          <select name="type" required>
+            <option value="">選択してください</option>
+            <option>チケット予約</option>
+            <option>ホール予約</option>
+            <option>録音・レッスン</option>
+            <option>その他</option>
+          </select>
+        </label>
         <label>お名前 <span class="req">必須</span>
-          <input name="name" required autocomplete="name" placeholder="text" />
+          <input name="name" required autocomplete="name" />
         </label>
-        <label>電話番号 <span class="req">必須</span>
-          <input type="tel" name="tel" required autocomplete="tel" placeholder="text" />
+        <label>メールアドレス <span class="req">必須</span>
+          <input type="email" name="email" required autocomplete="email" />
         </label>
-        <label>e-mail
-          <input type="email" name="email" autocomplete="email" placeholder="text" />
+        <label>電話番号
+          <input type="tel" name="tel" autocomplete="tel" />
         </label>
-        <label>メッセージ <span class="req">必須</span>
+        <label>ご希望日時
+          <input name="date" placeholder="例）2026年9月13日 14:00" />
+        </label>
+        <label>内容 <span class="req">必須</span>
           <textarea name="message" required placeholder="ご予約内容（公演名・枚数）や、ホール利用希望日、お問い合わせ内容をご記入ください"></textarea>
         </label>
-        <p><button class="btn-line" type="submit">✈ 送信</button></p>
+        <p class="center"><button class="btn-line" type="submit">✈ 送信する</button></p>
       </form>
     </section>
 
