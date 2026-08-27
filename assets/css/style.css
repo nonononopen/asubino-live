@@ -304,7 +304,8 @@ button {
 /* Hero */
 .hero {
   position: relative;
-  min-height: 100svh;
+  height: 610px;
+  min-height: 0;
   color: #fff;
   overflow: hidden;
   display: flex;
@@ -363,11 +364,6 @@ button {
 
   .brand-text strong {
     font-size: 13px;
-  }
-
-  .hero {
-    min-height: 0;
-    height: min(68svh, 580px);
   }
 
   .hero-media img {
@@ -1501,6 +1497,13 @@ button {
 @keyframes drip {
   0% { opacity: 1; transform: translateX(-50%) translateY(0); }
   100% { opacity: 0; transform: translateX(-50%) translateY(10px); }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: auto;
+    min-height: 100svh;
+  }
 }
 
 @media (min-width: 900px) {
