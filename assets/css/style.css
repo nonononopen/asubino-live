@@ -553,10 +553,6 @@ button {
   z-index: 1;
 }
 
-.about-inner p:last-child {
-  margin-bottom: 0;
-}
-
 .about h3 {
   margin: 0 0 24px;
   font-size: 20px;
@@ -568,24 +564,23 @@ button {
   color: var(--ink);
 }
 
-.about-fade-band {
-  position: relative;
-  left: 50%;
-  width: 100vw;
-  margin: 8px 0 0 -50vw;
-  min-height: 460px;
-  display: flex;
-  align-items: flex-end;
-  padding: 140px 40px 72px;
-  box-sizing: border-box;
+.about-quotes {
+  margin-top: 28px;
+}
+
+.about-quotes p {
+  margin: 0 0 0.6em;
+}
+
+.about-quotes p:last-child {
+  margin-bottom: 0;
 }
 
 .hall-fade {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  margin: 0;
+  position: relative;
+  left: 50%;
+  width: 100vw;
+  margin: 36px 0 0 -50vw;
 }
 
 .hall-fade picture,
@@ -597,7 +592,7 @@ button {
 
 .hall-fade img {
   width: 100%;
-  height: 100%;
+  height: 460px;
   object-fit: cover;
   object-position: center 42%;
   opacity: 0.16;
@@ -605,48 +600,30 @@ button {
   -webkit-mask-image: linear-gradient(
     to bottom,
     transparent 0%,
-    rgba(0, 0, 0, 0.4) 28%,
-    #000 58%,
+    rgba(0, 0, 0, 0.45) 22%,
+    #000 55%,
     #000 100%
   );
   mask-image: linear-gradient(
     to bottom,
     transparent 0%,
-    rgba(0, 0, 0, 0.4) 28%,
-    #000 58%,
+    rgba(0, 0, 0, 0.45) 22%,
+    #000 55%,
     #000 100%
   );
 }
 
-.about-fade-band::after {
+.hall-fade::after {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: 1;
   pointer-events: none;
   background: linear-gradient(
     180deg,
     var(--cream) 0%,
-    rgba(253, 249, 243, 0.72) 32%,
-    rgba(253, 249, 243, 0.4) 100%
+    rgba(253, 249, 243, 0.55) 28%,
+    rgba(253, 249, 243, 0.28) 100%
   );
-}
-
-.quote-on-photo {
-  position: relative;
-  z-index: 2;
-  max-width: 720px;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.quote-on-photo p {
-  margin: 0 0 0.6em;
-}
-
-.quote-on-photo p:last-child {
-  margin-bottom: 0;
 }
 
 @media (max-width: 767px) {
@@ -655,18 +632,9 @@ button {
     padding: 0 8px;
   }
 
-  .about-fade-band {
-    min-height: 280px;
-    padding: 88px 24px 48px;
-  }
-
   .hall-fade img {
+    height: 280px;
     object-position: center 38%;
-  }
-
-  .quote-on-photo {
-    padding: 0 8px;
-    text-align: left;
   }
 }
 
